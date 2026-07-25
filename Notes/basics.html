@@ -1,0 +1,1093 @@
+<div class="ds-markdown ds-assistant-message-main-content">
+  <p class="ds-markdown-paragraph"></p>
+  <hr />
+  <h2><span class="">🧠 1. WHAT IS MACHINE LEARNING (ML)?</span></h2>
+  <p class="ds-markdown-paragraph">
+    <strong><span class="">Simple Definition:</span></strong
+    ><br /><span class=""
+      >ML is a way to teach computers to learn patterns from data </span
+    ><strong><span class="">without being explicitly programmed</span></strong
+    ><span class=""> for every rule.</span>
+  </p>
+  <p class="ds-markdown-paragraph">
+    <strong><span class="">Traditional Programming:</span></strong
+    ><br /><span class=""
+      >You write rules (code) → Input data → Get output.</span
+    ><br /><em
+      ><span class="">(Example: If temp &gt; 40°C → print("Hot"))</span></em
+    >
+  </p>
+  <p class="ds-markdown-paragraph">
+    <strong><span class="">Machine Learning:</span></strong
+    ><br /><span class="">You give the computer </span
+    ><strong><span class="">data + answers</span></strong
+    ><span class=""> → It figures out the rules itself.</span><br /><em
+      ><span class=""
+        >(Example: Give it 1000 weather records with temperatures and labels
+        "Hot"/"Cold". It learns the temperature threshold on its own.)</span
+      ></em
+    >
+  </p>
+  <blockquote>
+    <p class="ds-markdown-paragraph">
+      <strong><span class="">In short:</span></strong
+      ><span class=""> ML = Data + Algorithm = Pattern = Prediction.</span>
+    </p>
+  </blockquote>
+  <hr />
+  <h2><span class="">🗂️ 2. THE 3 MAIN TYPES OF ML</span></h2>
+  <div
+    class="ds-scroll-area ds-scroll-area--show-on-focus-within ds-scroll-area--enabled _1210dd7 c03cafe9"
+    style="--container-height: 358px"
+  >
+    <div
+      class="ds-scroll-area__gutters"
+      style="
+        --container-height: 358px;
+        position: sticky;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        width: 100%;
+        height: 0px;
+      "
+    >
+      <div
+        class="ds-scroll-area__horizontal-gutter"
+        style="
+          left: 0px;
+          right: 0px;
+          display: block;
+          top: calc(var(--container-height) - 14px);
+          height: 8px;
+        "
+      >
+        <div class="ds-scroll-area__horizontal-bar" style="display: none"></div>
+      </div>
+      <div
+        class="ds-scroll-area__vertical-gutter"
+        style="
+          right: 3px;
+          top: 3px;
+          bottom: calc(0px - var(--container-height) + 3px);
+          width: 8px;
+        "
+      >
+        <div class="ds-scroll-area__vertical-bar" style="display: none"></div>
+      </div>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th><span class="">Type</span></th>
+          <th><span class="">What it does</span></th>
+          <th><span class="">Real-world Example</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <strong><span class="">Supervised Learning</span></strong>
+          </td>
+          <td>
+            <span class="">Learn from </span
+            ><strong><span class="">labeled data</span></strong
+            ><span class=""> (you give both input AND correct output)</span>
+          </td>
+          <td>
+            <span class="">Predict house prices (Regression) </span><br /><span
+              class=""
+            >
+              Spam detection (Classification)</span
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <strong><span class="">Unsupervised Learning</span></strong>
+          </td>
+          <td>
+            <span class="">Find patterns in </span
+            ><strong><span class="">unlabeled data</span></strong
+            ><span class=""> (no correct answers given)</span>
+          </td>
+          <td>
+            <span class="">Customer segmentation (Clustering) </span><br /><span
+              class=""
+            >
+              Reduce features (Dimensionality Reduction)</span
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <strong><span class="">Reinforcement Learning</span></strong>
+          </td>
+          <td>
+            <span class="">Learn by </span
+            ><strong><span class="">trial and error</span></strong
+            ><span class=""> (rewards &amp; penalties)</span>
+          </td>
+          <td><span class="">Self-driving cars, Game AI (AlphaGo)</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <blockquote>
+    <p class="ds-markdown-paragraph">
+      <strong
+        ><span class=""
+          >You'll spend 90% of your time on Supervised Learning.</span
+        ></strong
+      ><span class=""> Start there.</span>
+    </p>
+  </blockquote>
+  <hr />
+  <h2><span class="">🎯 3. SUPERVISED LEARNING — THE HEART OF ML</span></h2>
+  <p class="ds-markdown-paragraph">
+    <span class="">Supervised Learning splits into </span
+    ><strong><span class="">2 sub-problems</span></strong
+    ><span class="">:</span>
+  </p>
+  <h3><span class="">A. Regression (Predicting Continuous Numbers)</span></h3>
+  <ul>
+    <li>
+      <p class="ds-markdown-paragraph">
+        <span class="">Output is a </span
+        ><strong><span class="">number</span></strong
+        ><span class=""> (infinite possibilities).</span>
+      </p>
+    </li>
+    <li>
+      <p class="ds-markdown-paragraph"><span class="">Examples:</span></p>
+      <ul>
+        <li>
+          <p class="ds-markdown-paragraph">
+            <span class="">House price ($200k, $350k, etc.)</span>
+          </p>
+        </li>
+        <li>
+          <p class="ds-markdown-paragraph">
+            <span class="">Temperature tomorrow (25°C, 26.5°C)</span>
+          </p>
+        </li>
+        <li>
+          <p class="ds-markdown-paragraph"><span class="">Stock price</span></p>
+        </li>
+      </ul>
+    </li>
+  </ul>
+  <p class="ds-markdown-paragraph">
+    <strong><span class="">Algorithms:</span></strong
+    ><span class="">
+      Linear Regression, Decision Trees (for regression), Random Forest.</span
+    >
+  </p>
+  <hr />
+  <h3><span class="">B. Classification (Predicting Categories)</span></h3>
+  <ul>
+    <li>
+      <p class="ds-markdown-paragraph">
+        <span class="">Output is a </span
+        ><strong><span class="">class/label</span></strong
+        ><span class=""> (finite options).</span>
+      </p>
+    </li>
+    <li>
+      <p class="ds-markdown-paragraph"><span class="">Examples:</span></p>
+      <ul>
+        <li>
+          <p class="ds-markdown-paragraph">
+            <span class="">Email: Spam or Not Spam? (2 classes → Binary)</span>
+          </p>
+        </li>
+        <li>
+          <p class="ds-markdown-paragraph">
+            <span class=""
+              >Handwritten digit: 0–9 (10 classes → Multi-class)</span
+            >
+          </p>
+        </li>
+        <li>
+          <p class="ds-markdown-paragraph">
+            <span class="">Tumor: Benign or Malignant?</span>
+          </p>
+        </li>
+      </ul>
+    </li>
+  </ul>
+  <p class="ds-markdown-paragraph">
+    <strong><span class="">Algorithms:</span></strong
+    ><span class="">
+      Logistic Regression, SVM, Decision Trees, Naïve Bayes.</span
+    >
+  </p>
+  <hr />
+  <h2><span class="">📊 4. THE ML WORKFLOW (Step-by-Step)</span></h2>
+  <p class="ds-markdown-paragraph">
+    <span class="">This is the process you’ll follow for </span
+    ><strong><span class="">every project</span></strong
+    ><span class="">:</span>
+  </p>
+  <div class="md-code-block md-code-block-dark">
+    <div class="md-code-block-banner-wrap">
+      <div class="md-code-block-banner md-code-block-banner-lite">
+        <div class="_121d384">
+          <div class="d2a24f03"><span class="d813de27">text</span></div>
+          <div class="d2a24f03 _246a029">
+            <div class="efa13877">
+              <div
+                role="button"
+                class="ds-button ds-button--borderlessNeutral ds-button--borderless ds-button--capsule ds-button--xs ds-button--icon-relative-m ds-button--min-width"
+                tabindex="0"
+                style="margin-right: 2px"
+              >
+                <div class="ds-button__background"></div>
+                <div class="ds-button__icon">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6.14929 4.02032C7.11197 4.02032 7.87983 4.02016 8.49597 4.07598C9.12128 4.13269 9.65792 4.25188 10.1415 4.53106C10.7202 4.8653 11.2008 5.3459 11.535 5.92462C11.8142 6.40818 11.9334 6.94481 11.9901 7.57012C12.0459 8.18625 12.0458 8.95419 12.0458 9.9168C12.0458 10.8795 12.0459 11.6473 11.9901 12.2635C11.9334 12.8888 11.8142 13.4254 11.535 13.909C11.2008 14.4877 10.7202 14.9683 10.1415 15.3025C9.65792 15.5817 9.12128 15.7009 8.49597 15.7576C7.87984 15.8134 7.11196 15.8133 6.14929 15.8133C5.18667 15.8133 4.41874 15.8134 3.80261 15.7576C3.1773 15.7009 2.64067 15.5817 2.1571 15.3025C1.5784 14.9683 1.09778 14.4877 0.76355 13.909C0.484366 13.4254 0.365184 12.8888 0.308472 12.2635C0.252649 11.6473 0.252808 10.8795 0.252808 9.9168C0.252808 8.95418 0.252664 8.18625 0.308472 7.57012C0.365184 6.94481 0.484366 6.40818 0.76355 5.92462C1.09777 5.34589 1.57839 4.86529 2.1571 4.53106C2.64067 4.25188 3.1773 4.13269 3.80261 4.07598C4.41874 4.02017 5.18666 4.02032 6.14929 4.02032ZM6.14929 5.37774C5.16181 5.37774 4.46634 5.37761 3.92566 5.42657C3.39434 5.47472 3.07859 5.56574 2.83582 5.70587C2.4632 5.92106 2.15354 6.2307 1.93835 6.60333C1.79823 6.8461 1.70721 7.16185 1.65906 7.69317C1.6101 8.23385 1.61023 8.92933 1.61023 9.9168C1.61023 10.9043 1.61009 11.5998 1.65906 12.1404C1.70721 12.6717 1.79823 12.9875 1.93835 13.2303C2.15356 13.6029 2.46321 13.9126 2.83582 14.1277C3.07859 14.2679 3.39434 14.3589 3.92566 14.407C4.46634 14.456 5.16182 14.4559 6.14929 14.4559C7.13682 14.4559 7.83224 14.456 8.37292 14.407C8.90425 14.3589 9.21999 14.2679 9.46277 14.1277C9.83535 13.9126 10.145 13.6029 10.3602 13.2303C10.5004 12.9875 10.5914 12.6717 10.6395 12.1404C10.6885 11.5998 10.6884 10.9043 10.6884 9.9168C10.6884 8.92934 10.6885 8.23384 10.6395 7.69317C10.5914 7.16185 10.5004 6.8461 10.3602 6.60333C10.1451 6.23071 9.83536 5.92107 9.46277 5.70587C9.21999 5.56574 8.90424 5.47472 8.37292 5.42657C7.83224 5.3776 7.13682 5.37774 6.14929 5.37774ZM9.80164 0.367975C10.7638 0.367975 11.5314 0.36788 12.1473 0.423639C12.7726 0.480307 13.3093 0.598759 13.7928 0.877741C14.3717 1.21192 14.8521 1.69355 15.1864 2.27227C15.4655 2.75574 15.5857 3.29164 15.6425 3.9168C15.6983 4.53301 15.6971 5.3016 15.6971 6.26446V7.82989C15.6971 8.29264 15.6989 8.58993 15.6649 8.84844C15.4668 10.3525 14.401 11.5738 12.9833 11.9988V10.5467C13.6973 10.1903 14.2105 9.49662 14.3192 8.67169C14.3387 8.52347 14.3407 8.3358 14.3407 7.82989V6.26446C14.3407 5.27706 14.3398 4.58149 14.2909 4.04083C14.2428 3.50968 14.1526 3.19372 14.0126 2.95098C13.7974 2.57849 13.4876 2.26869 13.1151 2.05352C12.8724 1.91347 12.5564 1.82237 12.0253 1.77423C11.4847 1.72528 10.7888 1.7254 9.80164 1.7254H7.71472C6.7562 1.72558 5.92665 2.27697 5.52332 3.07891H4.07019C4.54221 1.51132 5.9932 0.368186 7.71472 0.367975H9.80164Z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+                </div>
+                <span class="ds-button__content"
+                  ><span class="code-info-button-text">Copy</span></span
+                >
+              </div>
+              <div
+                role="button"
+                class="ds-button ds-button--borderlessNeutral ds-button--borderless ds-button--capsule ds-button--xs ds-button--icon-relative-m ds-button--min-width"
+                tabindex="0"
+              >
+                <div class="ds-button__background"></div>
+                <div class="ds-button__icon">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M15.3695 11.411L15.1234 12.8866C14.8869 14.3042 13.6603 15.3436 12.223 15.3436H3.77673C2.33958 15.3434 1.1128 14.3042 0.876343 12.8866L0.630249 11.411L2.05408 11.1747L2.29919 12.6493C2.41973 13.3713 3.04475 13.9001 3.77673 13.9003H12.223C12.9551 13.9002 13.58 13.3713 13.7006 12.6493L13.9457 11.1747L15.3695 11.411ZM8.72205 8.994C8.77717 8.93934 8.83792 8.88106 8.90271 8.81627L12.4828 5.23424L13.5043 6.25572L9.92224 9.8358C9.6395 10.1185 9.38763 10.3732 9.15857 10.5575C8.91892 10.7503 8.63953 10.9224 8.2865 10.9784C8.09711 11.0083 7.90363 11.0083 7.71423 10.9784C7.36106 10.9224 7.0809 10.7503 6.84119 10.5575C6.61215 10.3732 6.36022 10.1185 6.07751 9.8358L2.49646 6.25572L3.51697 5.23424L7.09705 8.81627C7.16219 8.88142 7.22331 8.94006 7.27869 8.99498V1.3065H8.72205V8.994Z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+                </div>
+                <span class="ds-button__content"
+                  ><span class="code-info-button-text">Download</span></span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <pre><span>1. Define Problem</span>
+<span>       ↓</span>
+<span>2. Collect Data</span>
+<span>       ↓</span>
+<span>3. Explore &amp; Clean (EDA)  ← Pandas, Matplotlib</span>
+<span>       ↓</span>
+<span>4. Feature Engineering  ← Create/transform features</span>
+<span>       ↓</span>
+<span>5. Split Data  → Train (70%) | Validation (15%) | Test (15%)</span>
+<span>       ↓</span>
+<span>6. Choose Algorithm</span>
+<span>       ↓</span>
+<span>7. Train Model  ← Learn patterns</span>
+<span>       ↓</span>
+<span>8. Evaluate  ← Check performance on test set</span>
+<span>       ↓</span>
+<span>9. Tune Hyperparameters  ← Improve score</span>
+<span>       ↓</span>
+<span>10. Deploy / Predict</span></pre>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="12"
+      height="12"
+      viewBox="0 0 12 12"
+      fill="none"
+      class="_9bc997d _33882ae"
+    >
+      <path
+        d="M-5.24537e-07 0C-2.34843e-07 6.62742 5.37258 12 12 12L0 12L-5.24537e-07 0Z"
+        fill="currentColor"
+      ></path></svg>
+      <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="12"
+      height="12"
+      viewBox="0 0 12 12"
+      fill="none"
+      class="_9bc997d _28d7e84"
+    >
+      <path
+        d="M-5.24537e-07 0C-2.34843e-07 6.62742 5.37258 12 12 12L0 12L-5.24537e-07 0Z"
+        fill="currentColor"
+      ></path>
+    </svg>
+  </div>
+  <hr />
+  <h2><span class="">🔥 5. CRITICAL CONCEPTS YOU MUST KNOW</span></h2>
+  <h3><span class="">A. Features (X) &amp; Target (y)</span></h3>
+  <ul>
+    <li>
+      <p class="ds-markdown-paragraph">
+        <strong><span class="">Features (X):</span></strong
+        ><span class=""> Input variables you use to predict.</span>
+      </p>
+      <ul>
+        <li>
+          <p class="ds-markdown-paragraph">
+            <em><span class="">Example for house price:</span></em
+            ><span class=""> Size, Bedrooms, Location, Age.</span>
+          </p>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <p class="ds-markdown-paragraph">
+        <strong><span class="">Target (y):</span></strong
+        ><span class=""> What you want to predict.</span>
+      </p>
+      <ul>
+        <li>
+          <p class="ds-markdown-paragraph">
+            <em><span class="">Example:</span></em
+            ><span class=""> Price of the house.</span>
+          </p>
+        </li>
+      </ul>
+    </li>
+  </ul>
+  <h3><span class="">B. Training vs. Testing</span></h3>
+  <ul>
+    <li>
+      <p class="ds-markdown-paragraph">
+        <strong><span class="">Training Set:</span></strong
+        ><span class=""> Data the model learns from (usually 70-80%).</span>
+      </p>
+    </li>
+    <li>
+      <p class="ds-markdown-paragraph">
+        <strong><span class="">Test Set:</span></strong
+        ><span class="">
+          Data the model has NEVER seen. Used to check if it actually learned
+          (20-30%).</span
+        >
+      </p>
+    </li>
+    <li>
+      <p class="ds-markdown-paragraph">
+        <strong><span class="">Validation Set:</span></strong
+        ><span class="">
+          A separate set used to tune hyperparameters (optional but
+          recommended).</span
+        >
+      </p>
+    </li>
+  </ul>
+  <h3>
+    <span class="">C. Overfitting &amp; Underfitting (THE BIGGEST TRAP)</span>
+  </h3>
+  <div
+    class="ds-scroll-area ds-scroll-area--show-on-focus-within ds-scroll-area--enabled _1210dd7 c03cafe9"
+    style="--container-height: 212px"
+  >
+    <div
+      class="ds-scroll-area__gutters"
+      style="
+        --container-height: 212px;
+        position: sticky;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        width: 100%;
+        height: 0px;
+      "
+    >
+      <div
+        class="ds-scroll-area__horizontal-gutter"
+        style="
+          left: 0px;
+          right: 0px;
+          display: block;
+          top: calc(var(--container-height) - 14px);
+          height: 8px;
+        "
+      >
+        <div class="ds-scroll-area__horizontal-bar" style="display: none"></div>
+      </div>
+      <div
+        class="ds-scroll-area__vertical-gutter"
+        style="
+          right: 3px;
+          top: 3px;
+          bottom: calc(0px - var(--container-height) + 3px);
+          width: 8px;
+        "
+      >
+        <div class="ds-scroll-area__vertical-bar" style="display: none"></div>
+      </div>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th><span class="">Problem</span></th>
+          <th><span class="">What it means</span></th>
+          <th><span class="">Solution</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <strong><span class="">Overfitting</span></strong>
+          </td>
+          <td>
+            <span class=""
+              >Model memorized training data but fails on new data (High
+              Variance)</span
+            >
+          </td>
+          <td>
+            <span class="">More data, Regularization, Simpler model</span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <strong><span class="">Underfitting</span></strong>
+          </td>
+          <td>
+            <span class=""
+              >Model is too simple, can't even learn training data (High
+              Bias)</span
+            >
+          </td>
+          <td>
+            <span class="">More features, Complex model, Train longer</span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="ds-markdown-paragraph">
+    <strong><span class="">The Goal:</span></strong
+    ><span class=""> Find the </span><em><span class="">sweet spot</span></em
+    ><span class=""> between Overfitting and Underfitting.</span>
+  </p>
+  <hr />
+  <h3><span class="">D. Loss Function / Cost Function</span></h3>
+  <ul>
+    <li>
+      <p class="ds-markdown-paragraph">
+        <span class="">A number that tells the model </span
+        ><strong><span class="">how wrong</span></strong
+        ><span class=""> it is.</span>
+      </p>
+    </li>
+    <li>
+      <p class="ds-markdown-paragraph">
+        <span class="">The model tries to </span
+        ><strong><span class="">minimize</span></strong
+        ><span class=""> this number.</span>
+      </p>
+    </li>
+  </ul>
+  <div
+    class="ds-scroll-area ds-scroll-area--show-on-focus-within ds-scroll-area--enabled _1210dd7 c03cafe9"
+    style="--container-height: 183px"
+  >
+    <div
+      class="ds-scroll-area__gutters"
+      style="
+        --container-height: 183px;
+        position: sticky;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        width: 100%;
+        height: 0px;
+      "
+    >
+      <div
+        class="ds-scroll-area__horizontal-gutter"
+        style="
+          left: 0px;
+          right: 0px;
+          display: block;
+          top: calc(var(--container-height) - 14px);
+          height: 8px;
+        "
+      >
+        <div class="ds-scroll-area__horizontal-bar" style="display: none"></div>
+      </div>
+      <div
+        class="ds-scroll-area__vertical-gutter"
+        style="
+          right: 3px;
+          top: 3px;
+          bottom: calc(0px - var(--container-height) + 3px);
+          width: 8px;
+        "
+      >
+        <div class="ds-scroll-area__vertical-bar" style="display: none"></div>
+      </div>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th><span class="">Algorithm</span></th>
+          <th><span class="">Loss Function</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="">Linear Regression</span></td>
+          <td><span class="">Mean Squared Error (MSE)</span></td>
+        </tr>
+        <tr>
+          <td><span class="">Logistic Regression</span></td>
+          <td><span class="">Cross-Entropy / Log Loss</span></td>
+        </tr>
+        <tr>
+          <td><span class="">SVM</span></td>
+          <td><span class="">Hinge Loss</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <hr />
+  <h3><span class="">E. Gradient Descent (The Engine)</span></h3>
+  <ul>
+    <li>
+      <p class="ds-markdown-paragraph">
+        <span class="">The algorithm that </span
+        ><strong><span class="">updates the model</span></strong
+        ><span class=""> to reduce the loss.</span>
+      </p>
+    </li>
+    <li>
+      <p class="ds-markdown-paragraph">
+        <span class="">Think of it as: </span
+        ><em
+          ><span class=""
+            >"Take a small step downhill until you reach the bottom (minimum
+            loss)."</span
+          ></em
+        >
+      </p>
+    </li>
+    <li>
+      <p class="ds-markdown-paragraph">
+        <span class=""
+          >Types: Batch GD, Stochastic GD (SGD), Mini-Batch GD.</span
+        >
+      </p>
+    </li>
+  </ul>
+  <hr />
+  <h3><span class="">F. Hyperparameters vs. Parameters</span></h3>
+  <div
+    class="ds-scroll-area ds-scroll-area--show-on-focus-within ds-scroll-area--enabled _1210dd7 c03cafe9"
+    style="--container-height: 162px"
+  >
+    <div
+      class="ds-scroll-area__gutters"
+      style="
+        --container-height: 162px;
+        position: sticky;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        width: 100%;
+        height: 0px;
+      "
+    >
+      <div
+        class="ds-scroll-area__horizontal-gutter"
+        style="
+          left: 0px;
+          right: 0px;
+          display: block;
+          top: calc(var(--container-height) - 14px);
+          height: 8px;
+        "
+      >
+        <div class="ds-scroll-area__horizontal-bar" style="display: none"></div>
+      </div>
+      <div
+        class="ds-scroll-area__vertical-gutter"
+        style="
+          right: 3px;
+          top: 3px;
+          bottom: calc(0px - var(--container-height) + 3px);
+          width: 8px;
+        "
+      >
+        <div class="ds-scroll-area__vertical-bar" style="display: none"></div>
+      </div>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th><span class="">Parameter</span></th>
+          <th><span class="">Hyperparameter</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="">Learned automatically by the model</span></td>
+          <td><span class="">Set manually by YOU before training</span></td>
+        </tr>
+        <tr>
+          <td>
+            <em><span class="">Example:</span></em
+            ><span class=""> Weights (θ) in Linear Regression</span>
+          </td>
+          <td>
+            <em><span class="">Example:</span></em
+            ><span class="">
+              Learning rate, Number of trees in Random Forest</span
+            >
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <hr />
+  <h2>
+    <span class="">🧪 6. EVALUATION METRICS (How to judge your model)</span>
+  </h2>
+  <h3><span class="">For Regression (Numbers):</span></h3>
+  <ul>
+    <li>
+      <p class="ds-markdown-paragraph">
+        <strong><span class="">MSE</span></strong
+        ><span class="">
+          (Mean Squared Error) — Penalizes big errors heavily.</span
+        >
+      </p>
+    </li>
+    <li>
+      <p class="ds-markdown-paragraph">
+        <strong><span class="">MAE</span></strong
+        ><span class=""> (Mean Absolute Error) — Easier to interpret.</span>
+      </p>
+    </li>
+    <li>
+      <p class="ds-markdown-paragraph">
+        <strong><span class="">R² Score</span></strong
+        ><span class="">
+          — How much variance your model explains (0 to 1). Higher =
+          Better.</span
+        >
+      </p>
+    </li>
+  </ul>
+  <h3><span class="">For Classification (Categories):</span></h3>
+  <ul>
+    <li>
+      <p class="ds-markdown-paragraph">
+        <strong><span class="">Accuracy</span></strong
+        ><span class=""> — (Correct Predictions / Total) — </span
+        ><em><span class="">But misleading for imbalanced data!</span></em>
+      </p>
+    </li>
+    <li>
+      <p class="ds-markdown-paragraph">
+        <strong><span class="">Confusion Matrix</span></strong
+        ><span class=""> — Shows True/False Positives/Negatives.</span>
+      </p>
+    </li>
+    <li>
+      <p class="ds-markdown-paragraph">
+        <strong><span class="">Precision</span></strong
+        ><span class="">
+          — Of all "Yes" predictions, how many were correct?</span
+        >
+      </p>
+    </li>
+    <li>
+      <p class="ds-markdown-paragraph">
+        <strong><span class="">Recall</span></strong
+        ><span class="">
+          — Of all actual "Yes" cases, how many did we catch?</span
+        >
+      </p>
+    </li>
+    <li>
+      <p class="ds-markdown-paragraph">
+        <strong><span class="">F1-Score</span></strong
+        ><span class=""> — Harmonic mean of Precision &amp; Recall.</span>
+      </p>
+    </li>
+    <li>
+      <p class="ds-markdown-paragraph">
+        <strong><span class="">ROC-AUC</span></strong
+        ><span class=""> — Measures how well model separates classes.</span>
+      </p>
+    </li>
+  </ul>
+  <hr />
+  <h2>
+    <span class="">🧰 7. WHEN TO USE WHICH ALGORITHM? (Quick Cheatsheet)</span>
+  </h2>
+  <div
+    class="ds-scroll-area ds-scroll-area--show-on-focus-within ds-scroll-area--enabled _1210dd7 c03cafe9"
+    style="--container-height: 412px"
+  >
+    <div
+      class="ds-scroll-area__gutters"
+      style="
+        --container-height: 412px;
+        position: sticky;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        width: 100%;
+        height: 0px;
+      "
+    >
+      <div
+        class="ds-scroll-area__horizontal-gutter"
+        style="
+          left: 0px;
+          right: 0px;
+          display: block;
+          top: calc(var(--container-height) - 14px);
+          height: 8px;
+        "
+      >
+        <div class="ds-scroll-area__horizontal-bar" style="display: none"></div>
+      </div>
+      <div
+        class="ds-scroll-area__vertical-gutter"
+        style="
+          right: 3px;
+          top: 3px;
+          bottom: calc(0px - var(--container-height) + 3px);
+          width: 8px;
+        "
+      >
+        <div class="ds-scroll-area__vertical-bar" style="display: none"></div>
+      </div>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th><span class="">Scenario</span></th>
+          <th><span class="">Algorithm to try FIRST</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="">Predicting a number (e.g., price)</span></td>
+          <td>
+            <strong><span class="">Linear Regression</span></strong
+            ><span class=""> (baseline)</span>
+          </td>
+        </tr>
+        <tr>
+          <td><span class="">Binary classification (e.g., spam)</span></td>
+          <td>
+            <strong><span class="">Logistic Regression</span></strong>
+          </td>
+        </tr>
+        <tr>
+          <td><span class="">High-dimensional data (many features)</span></td>
+          <td>
+            <strong><span class="">SVM</span></strong
+            ><span class=""> or </span
+            ><strong><span class="">Random Forest</span></strong>
+          </td>
+        </tr>
+        <tr>
+          <td><span class="">Small dataset</span></td>
+          <td>
+            <strong><span class="">Naïve Bayes</span></strong
+            ><span class=""> or </span
+            ><strong><span class="">SVM</span></strong>
+          </td>
+        </tr>
+        <tr>
+          <td><span class="">Large dataset with mixed data</span></td>
+          <td>
+            <strong><span class="">Random Forest</span></strong
+            ><span class=""> or </span
+            ><strong><span class="">XGBoost</span></strong>
+          </td>
+        </tr>
+        <tr>
+          <td><span class="">Want to understand feature importance</span></td>
+          <td>
+            <strong><span class="">Decision Tree / Random Forest</span></strong>
+          </td>
+        </tr>
+        <tr>
+          <td><span class="">Unsupervised grouping</span></td>
+          <td>
+            <strong><span class="">K-Means Clustering</span></strong>
+          </td>
+        </tr>
+        <tr>
+          <td><span class="">Reduce dimensions for visualization</span></td>
+          <td>
+            <strong><span class="">PCA</span></strong>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <hr />
+  <h2>
+    <span class="">🛠️ 8. YOUR TOOLKIT (What you'll actually code with)</span>
+  </h2>
+  <div
+    class="ds-scroll-area ds-scroll-area--show-on-focus-within ds-scroll-area--enabled _1210dd7 c03cafe9"
+    style="--container-height: 300px"
+  >
+    <div
+      class="ds-scroll-area__gutters"
+      style="
+        --container-height: 300px;
+        position: sticky;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        width: 100%;
+        height: 0px;
+      "
+    >
+      <div
+        class="ds-scroll-area__horizontal-gutter"
+        style="
+          left: 0px;
+          right: 0px;
+          display: block;
+          top: calc(var(--container-height) - 14px);
+          height: 8px;
+        "
+      >
+        <div class="ds-scroll-area__horizontal-bar" style="display: none"></div>
+      </div>
+      <div
+        class="ds-scroll-area__vertical-gutter"
+        style="
+          right: 3px;
+          top: 3px;
+          bottom: calc(0px - var(--container-height) + 3px);
+          width: 8px;
+        "
+      >
+        <div class="ds-scroll-area__vertical-bar" style="display: none"></div>
+      </div>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th><span class="">Tool</span></th>
+          <th><span class="">Purpose</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <strong><span class="">NumPy</span></strong>
+          </td>
+          <td><span class="">All math (matrices, vectors)</span></td>
+        </tr>
+        <tr>
+          <td>
+            <strong><span class="">Pandas</span></strong>
+          </td>
+          <td><span class="">Data manipulation (CSV, cleaning)</span></td>
+        </tr>
+        <tr>
+          <td>
+            <strong><span class="">Matplotlib / Seaborn</span></strong>
+          </td>
+          <td><span class="">Plotting &amp; visualization</span></td>
+        </tr>
+        <tr>
+          <td>
+            <strong><span class="">Scikit-Learn (sklearn)</span></strong>
+          </td>
+          <td>
+            <span class=""
+              >Pre-built ML algorithms (use AFTER you code from scratch)</span
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <strong><span class="">Jupyter Notebook</span></strong>
+          </td>
+          <td><span class="">Interactive coding &amp; testing</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <hr />
+  <h2><span class="">🧠 9. THE "MENTAL MODEL" YOU NEED</span></h2>
+  <p class="ds-markdown-paragraph">
+    <span class="">Every ML algorithm follows this formula:</span>
+  </p>
+  <blockquote>
+    <p class="ds-markdown-paragraph">
+      <strong
+        ><span class="">Input (X) → Algorithm (f) → Output (y)</span></strong
+      ><br /><em
+        ><span class="">Where </span><strong><span class="">f</span></strong
+        ><span class=""> is learned from data.</span></em
+      >
+    </p>
+  </blockquote>
+  <p class="ds-markdown-paragraph"><span class="">For example:</span></p>
+  <ul>
+    <li>
+      <p class="ds-markdown-paragraph">
+        <strong><span class="">Linear Regression:</span></strong
+        ><span class=""> y = mx + c</span>
+      </p>
+    </li>
+    <li>
+      <p class="ds-markdown-paragraph">
+        <strong><span class="">Logistic Regression:</span></strong
+        ><span class=""> y = 1 / (1 + e^-(mx+c))</span>
+      </p>
+    </li>
+    <li>
+      <p class="ds-markdown-paragraph">
+        <strong><span class="">Neural Network:</span></strong
+        ><span class=""> y = f( W₂ · f( W₁ · x + b₁ ) + b₂ )</span>
+      </p>
+    </li>
+  </ul>
+  <hr />
+  <h2>
+    <span class="">✅ 10. YOUR CHECKLIST — DO YOU UNDERSTAND THESE?</span>
+  </h2>
+  <p class="ds-markdown-paragraph">
+    <span class=""
+      >Before moving forward, make sure you can answer these in 1
+      sentence:</span
+    >
+  </p>
+  <ul>
+    <li class="ds-markdown-task-list-item">
+      <span class="ds-markdown-task-checkbox">□ </span>
+      <p class="ds-markdown-paragraph">
+        <span class=""
+          >What is the difference between Supervised and Unsupervised
+          Learning?</span
+        >
+      </p>
+    </li>
+    <li class="ds-markdown-task-list-item">
+      <span class="ds-markdown-task-checkbox">□ </span>
+      <p class="ds-markdown-paragraph">
+        <span class="">What is a feature? A target?</span>
+      </p>
+    </li>
+    <li class="ds-markdown-task-list-item">
+      <span class="ds-markdown-task-checkbox">□ </span>
+      <p class="ds-markdown-paragraph">
+        <span class="">Why do we split data into train and test?</span>
+      </p>
+    </li>
+    <li class="ds-markdown-task-list-item">
+      <span class="ds-markdown-task-checkbox">□ </span>
+      <p class="ds-markdown-paragraph">
+        <span class="">What is overfitting? How do you fix it?</span>
+      </p>
+    </li>
+    <li class="ds-markdown-task-list-item">
+      <span class="ds-markdown-task-checkbox">□ </span>
+      <p class="ds-markdown-paragraph">
+        <span class="">What does Gradient Descent do?</span>
+      </p>
+    </li>
+    <li class="ds-markdown-task-list-item">
+      <span class="ds-markdown-task-checkbox">□ </span>
+      <p class="ds-markdown-paragraph">
+        <span class=""
+          >What is the difference between Regression and Classification?</span
+        >
+      </p>
+    </li>
+    <li class="ds-markdown-task-list-item">
+      <span class="ds-markdown-task-checkbox">□ </span>
+      <p class="ds-markdown-paragraph">
+        <span class="">What is a Confusion Matrix used for?</span>
+      </p>
+    </li>
+  </ul>
+  <hr />
+  <h2><span class="">🚀 YOUR NEXT STEP</span></h2>
+  <p class="ds-markdown-paragraph">
+    <span class="">You're now ready to </span
+    ><strong><span class="">build your first model</span></strong
+    ><span class="">.</span>
+  </p>
+  <p class="ds-markdown-paragraph">
+    <strong><span class="">Tomorrow's Task:</span></strong
+    ><br /><span class="">Take the </span
+    ><strong><span class="">Boston Housing</span></strong
+    ><span class=""> or </span
+    ><strong><span class="">California Housing</span></strong
+    ><span class=""> dataset:</span>
+  </p>
+  <ol start="1">
+    <li>
+      <p class="ds-markdown-paragraph">
+        <span class="">Load it using </span><code>sklearn.datasets</code>
+      </p>
+    </li>
+    <li>
+      <p class="ds-markdown-paragraph">
+        <span class="">Split into X and y</span>
+      </p>
+    </li>
+    <li>
+      <p class="ds-markdown-paragraph">
+        <span class="">Train a </span
+        ><strong><span class="">Linear Regression</span></strong
+        ><span class=""> model using sklearn</span>
+      </p>
+    </li>
+    <li>
+      <p class="ds-markdown-paragraph">
+        <span class="">Evaluate with MSE and R²</span>
+      </p>
+    </li>
+    <li>
+      <p class="ds-markdown-paragraph">
+        <span class="">Visualize predictions vs. actual</span>
+      </p>
+    </li>
+  </ol>
+  <hr />
+  <p class="ds-markdown-paragraph">
+    <strong
+      ><span class=""
+        >Want me to drop the exact Day 1 code + dataset right now?</span
+      ></strong
+    >
+  </p>
+  <p class="ds-markdown-paragraph">
+    <span class="">Just say </span
+    ><strong><span class="">"Yes, give me code"</span></strong
+    ><span class="">
+      and I’ll send you a complete, copy-paste-ready Jupyter notebook to run
+      your first ML model in under 15 minutes. Let’s go! 💪</span
+    >
+  </p>
+</div>

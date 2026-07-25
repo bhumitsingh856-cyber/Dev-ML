@@ -1,0 +1,1773 @@
+<div class="ds-markdown ds-assistant-message-main-content">
+  <hr />
+  <h3><span class="">PHASE 0: Mathematical Foundation</span></h3>
+  <p class="ds-markdown-paragraph">
+    <em><span class="">Time: 3-4 weeks</span></em>
+  </p>
+  <div
+    class="ds-scroll-area ds-scroll-area--show-on-focus-within ds-scroll-area--enabled _1210dd7 c03cafe9"
+    style="--container-height: 358px"
+  >
+    <div
+      class="ds-scroll-area__gutters"
+      style="
+        --container-height: 358px;
+        position: sticky;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        width: 100%;
+        height: 0px;
+      "
+    >
+      <div
+        class="ds-scroll-area__horizontal-gutter"
+        style="
+          left: 0px;
+          right: 0px;
+          display: block;
+          top: calc(var(--container-height) - 14px);
+          height: 8px;
+        "
+      >
+        <div class="ds-scroll-area__horizontal-bar" style="display: none"></div>
+      </div>
+      <div
+        class="ds-scroll-area__vertical-gutter"
+        style="
+          right: 3px;
+          top: 3px;
+          bottom: calc(0px - var(--container-height) + 3px);
+          width: 8px;
+        "
+      >
+        <div class="ds-scroll-area__vertical-bar" style="display: none"></div>
+      </div>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th><span class="">Topic</span></th>
+          <th><span class="">Sub-Topics</span></th>
+          <th><span class="">Why It Matters</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <strong><span class="">Linear Algebra</span></strong>
+          </td>
+          <td>
+            <span class=""
+              >Vectors, matrices, dot product, norms, eigenvalues/eigenvectors,
+              SVD</span
+            >
+          </td>
+          <td><span class="">Foundation for ALL ML algorithms</span></td>
+        </tr>
+        <tr>
+          <td>
+            <strong><span class="">Calculus</span></strong>
+          </td>
+          <td>
+            <span class=""
+              >Derivatives, partial derivatives, gradients, chain rule</span
+            >
+          </td>
+          <td><span class="">Backpropagation, Gradient Descent</span></td>
+        </tr>
+        <tr>
+          <td>
+            <strong><span class="">Probability &amp; Statistics</span></strong>
+          </td>
+          <td>
+            <span class=""
+              >Bayes theorem, distributions (Gaussian, Bernoulli), MLE,
+              covariance, correlation</span
+            >
+          </td>
+          <td><span class="">Model training, evaluation, inference</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <hr />
+  <h3><span class="">PHASE 1: Classical Machine Learning (Core)</span></h3>
+  <p class="ds-markdown-paragraph">
+    <em><span class="">Time: 8-10 weeks</span></em>
+  </p>
+  <h4><span class="">1.1 Supervised Learning - Regression</span></h4>
+  <div
+    class="ds-scroll-area ds-scroll-area--show-on-focus-within ds-scroll-area--enabled _1210dd7 c03cafe9"
+    style="--container-height: 429px"
+  >
+    <div
+      class="ds-scroll-area__gutters"
+      style="
+        --container-height: 429px;
+        position: sticky;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        width: 100%;
+        height: 0px;
+      "
+    >
+      <div
+        class="ds-scroll-area__horizontal-gutter"
+        style="
+          left: 0px;
+          right: 0px;
+          display: block;
+          top: calc(var(--container-height) - 14px);
+          height: 8px;
+        "
+      >
+        <div class="ds-scroll-area__horizontal-bar" style="display: none"></div>
+      </div>
+      <div
+        class="ds-scroll-area__vertical-gutter"
+        style="
+          right: 3px;
+          top: 3px;
+          bottom: calc(0px - var(--container-height) + 3px);
+          width: 8px;
+        "
+      >
+        <div class="ds-scroll-area__vertical-bar" style="display: none"></div>
+      </div>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th><span class="">Algorithm</span></th>
+          <th><span class="">What to Learn</span></th>
+          <th><span class="">Code Task</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <strong><span class="">Linear Regression</span></strong>
+          </td>
+          <td>
+            <span class=""
+              >Model: y = Xθ + ε. MSE loss. Normal Equation: θ = (XᵀX)⁻¹Xᵀy.
+              Gradient Descent derivation.</span
+            >
+          </td>
+          <td>
+            <span class=""
+              >Implement from scratch in NumPy. Test on Boston Housing.</span
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <strong><span class="">Polynomial Regression</span></strong>
+          </td>
+          <td>
+            <span class=""
+              >Adding polynomial features. Overfitting with high-degree
+              polynomials.</span
+            >
+          </td>
+          <td>
+            <span class=""
+              >Implement PolynomialFeatures. Plot degree vs error.</span
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <strong><span class="">Ridge &amp; Lasso Regression</span></strong>
+          </td>
+          <td>
+            <span class=""
+              >L2 vs L1 regularization. Why L1 creates sparsity. Bias-Variance
+              tradeoff.</span
+            >
+          </td>
+          <td>
+            <span class=""
+              >Add L1/L2 to your LR code. Compare weight shrinkage.</span
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <strong><span class="">Evaluation</span></strong>
+          </td>
+          <td><span class="">MSE, MAE, RMSE, R² score.</span></td>
+          <td><span class="">Compute all metrics manually.</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <hr />
+  <h4><span class="">1.2 Supervised Learning - Classification</span></h4>
+  <div
+    class="ds-scroll-area ds-scroll-area--show-on-focus-within ds-scroll-area--enabled _1210dd7 c03cafe9"
+    style="--container-height: 429px"
+  >
+    <div
+      class="ds-scroll-area__gutters"
+      style="
+        --container-height: 429px;
+        position: sticky;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        width: 100%;
+        height: 0px;
+      "
+    >
+      <div
+        class="ds-scroll-area__horizontal-gutter"
+        style="
+          left: 0px;
+          right: 0px;
+          display: block;
+          top: calc(var(--container-height) - 14px);
+          height: 8px;
+        "
+      >
+        <div class="ds-scroll-area__horizontal-bar" style="display: none"></div>
+      </div>
+      <div
+        class="ds-scroll-area__vertical-gutter"
+        style="
+          right: 3px;
+          top: 3px;
+          bottom: calc(0px - var(--container-height) + 3px);
+          width: 8px;
+        "
+      >
+        <div class="ds-scroll-area__vertical-bar" style="display: none"></div>
+      </div>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th><span class="">Algorithm</span></th>
+          <th><span class="">What to Learn</span></th>
+          <th><span class="">Code Task</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <strong><span class="">Logistic Regression</span></strong>
+          </td>
+          <td>
+            <span class=""
+              >Sigmoid function. Cross-Entropy loss derivation from MLE.
+              Gradient descent update.</span
+            >
+          </td>
+          <td>
+            <span class=""
+              >Implement from scratch. Test on Breast Cancer dataset.</span
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <strong><span class="">Multi-class Logistic</span></strong>
+          </td>
+          <td>
+            <span class=""
+              >One-vs-Rest (OvR). Softmax function. Multinomial
+              Cross-Entropy.</span
+            >
+          </td>
+          <td>
+            <span class="">Implement Softmax. Test on Iris (3 classes).</span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <strong><span class="">Evaluation</span></strong>
+          </td>
+          <td>
+            <span class=""
+              >Confusion Matrix, Precision, Recall, F1, ROC-AUC.</span
+            >
+          </td>
+          <td>
+            <span class="">Compute all metrics manually. Plot ROC curve.</span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <strong><span class="">Class Imbalance</span></strong>
+          </td>
+          <td>
+            <span class=""
+              >SMOTE, class weights, appropriate metrics (F1, PR-AUC).</span
+            >
+          </td>
+          <td><span class="">Apply SMOTE. Compare F1 scores.</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <hr />
+  <h4><span class="">1.3 Supervised Learning - Non-Linear</span></h4>
+  <div
+    class="ds-scroll-area ds-scroll-area--show-on-focus-within ds-scroll-area--enabled _1210dd7 c03cafe9"
+    style="--container-height: 433px"
+  >
+    <div
+      class="ds-scroll-area__gutters"
+      style="
+        --container-height: 433px;
+        position: sticky;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        width: 100%;
+        height: 0px;
+      "
+    >
+      <div
+        class="ds-scroll-area__horizontal-gutter"
+        style="
+          left: 0px;
+          right: 0px;
+          display: block;
+          top: calc(var(--container-height) - 14px);
+          height: 8px;
+        "
+      >
+        <div class="ds-scroll-area__horizontal-bar" style="display: none"></div>
+      </div>
+      <div
+        class="ds-scroll-area__vertical-gutter"
+        style="
+          right: 3px;
+          top: 3px;
+          bottom: calc(0px - var(--container-height) + 3px);
+          width: 8px;
+        "
+      >
+        <div class="ds-scroll-area__vertical-bar" style="display: none"></div>
+      </div>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th><span class="">Algorithm</span></th>
+          <th><span class="">What to Learn</span></th>
+          <th><span class="">Code Task</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <strong><span class="">K-Nearest Neighbors (KNN)</span></strong>
+          </td>
+          <td>
+            <span class=""
+              >Distance metrics (Euclidean, Manhattan). Choice of k. Curse of
+              Dimensionality.</span
+            >
+          </td>
+          <td><span class="">Implement brute-force KNN from scratch.</span></td>
+        </tr>
+        <tr>
+          <td>
+            <strong><span class="">Naïve Bayes</span></strong>
+          </td>
+          <td>
+            <span class=""
+              >Bayes theorem. Conditional independence. Gaussian, Bernoulli,
+              Multinomial variants.</span
+            >
+          </td>
+          <td>
+            <span class=""
+              >Implement Gaussian NB from scratch. Test on text/spam data.</span
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <strong><span class="">Support Vector Machines (SVM)</span></strong>
+          </td>
+          <td>
+            <span class=""
+              >Max-margin hyperplane. Support vectors. Hinge loss. Soft-margin
+              (C). Kernel trick (RBF, Polynomial).</span
+            >
+          </td>
+          <td>
+            <span class=""
+              >Tune SVM on sklearn. Visualize support vectors.</span
+            >
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <hr />
+  <h4><span class="">1.4 Decision Trees &amp; Ensembles</span></h4>
+  <div
+    class="ds-scroll-area ds-scroll-area--show-on-focus-within ds-scroll-area--enabled _1210dd7 c03cafe9"
+    style="--container-height: 404px"
+  >
+    <div
+      class="ds-scroll-area__gutters"
+      style="
+        --container-height: 404px;
+        position: sticky;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        width: 100%;
+        height: 0px;
+      "
+    >
+      <div
+        class="ds-scroll-area__horizontal-gutter"
+        style="
+          left: 0px;
+          right: 0px;
+          display: block;
+          top: calc(var(--container-height) - 14px);
+          height: 8px;
+        "
+      >
+        <div class="ds-scroll-area__horizontal-bar" style="display: none"></div>
+      </div>
+      <div
+        class="ds-scroll-area__vertical-gutter"
+        style="
+          right: 3px;
+          top: 3px;
+          bottom: calc(0px - var(--container-height) + 3px);
+          width: 8px;
+        "
+      >
+        <div class="ds-scroll-area__vertical-bar" style="display: none"></div>
+      </div>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th><span class="">Algorithm</span></th>
+          <th><span class="">What to Learn</span></th>
+          <th><span class="">Code Task</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <strong><span class="">Decision Trees</span></strong>
+          </td>
+          <td>
+            <span class=""
+              >Splitting criteria: Gini, Entropy, Information Gain. Pruning
+              (Pre/Post).</span
+            >
+          </td>
+          <td>
+            <span class=""
+              >Implement DT from scratch (recursive splitting).</span
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <strong><span class="">Random Forest</span></strong>
+          </td>
+          <td>
+            <span class=""
+              >Bagging (bootstrap sampling). Feature subsampling. Out-of-Bag
+              (OOB) score.</span
+            >
+          </td>
+          <td>
+            <span class=""
+              >Implement RF from scratch (simplified) or use sklearn.</span
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <strong><span class="">Gradient Boosting</span></strong>
+          </td>
+          <td>
+            <span class=""
+              >Sequential learning. Fitting to residuals. XGBoost, LightGBM,
+              CatBoost.</span
+            >
+          </td>
+          <td>
+            <span class=""
+              >Train XGBoost on a Kaggle dataset. Tune: n_estimators, eta,
+              max_depth, subsample.</span
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <strong><span class="">Stacking &amp; Voting</span></strong>
+          </td>
+          <td>
+            <span class="">Base models → Meta-model. Hard vs Soft voting.</span>
+          </td>
+          <td>
+            <span class=""
+              >Implement VotingClassifier or StackingClassifier.</span
+            >
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <hr />
+  <h4><span class="">1.5 Unsupervised Learning</span></h4>
+  <div
+    class="ds-scroll-area ds-scroll-area--show-on-focus-within ds-scroll-area--enabled _1210dd7 c03cafe9"
+    style="--container-height: 600px"
+  >
+    <div
+      class="ds-scroll-area__gutters"
+      style="
+        --container-height: 600px;
+        position: sticky;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        width: 100%;
+        height: 0px;
+      "
+    >
+      <div
+        class="ds-scroll-area__horizontal-gutter"
+        style="
+          left: 0px;
+          right: 0px;
+          display: block;
+          top: calc(var(--container-height) - 14px);
+          height: 8px;
+        "
+      >
+        <div class="ds-scroll-area__horizontal-bar" style="display: none"></div>
+      </div>
+      <div
+        class="ds-scroll-area__vertical-gutter"
+        style="
+          right: 3px;
+          top: 3px;
+          bottom: calc(0px - var(--container-height) + 3px);
+          width: 8px;
+        "
+      >
+        <div class="ds-scroll-area__vertical-bar" style="display: none"></div>
+      </div>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th><span class="">Algorithm</span></th>
+          <th><span class="">What to Learn</span></th>
+          <th><span class="">Code Task</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <strong><span class="">K-Means</span></strong>
+          </td>
+          <td>
+            <span class=""
+              >Distance to centroids. WCSS. Elbow method. K-Means++
+              initialization.</span
+            >
+          </td>
+          <td><span class="">Implement K-Means from scratch.</span></td>
+        </tr>
+        <tr>
+          <td>
+            <strong><span class="">Hierarchical Clustering</span></strong>
+          </td>
+          <td>
+            <span class=""
+              >Agglomerative (bottom-up). Linkage: Single, Complete, Average,
+              Ward. Dendrogram.</span
+            >
+          </td>
+          <td><span class="">Plot dendrogram using scipy.</span></td>
+        </tr>
+        <tr>
+          <td>
+            <strong><span class="">DBSCAN</span></strong>
+          </td>
+          <td>
+            <span class=""
+              >Density-based. Epsilon (ε), MinPts. Core, Border, Noise
+              points.</span
+            >
+          </td>
+          <td>
+            <span class=""
+              >Use sklearn. Compare to K-Means on concentric circles.</span
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <strong
+              ><span class="">PCA (Principal Component Analysis)</span></strong
+            >
+          </td>
+          <td>
+            <span class=""
+              >Covariance → Eigenvectors → Projection. Explained Variance.
+              Dimensionality reduction.</span
+            >
+          </td>
+          <td>
+            <span class=""
+              >Implement PCA from scratch using SVD. Visualize 2D
+              projection.</span
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <strong><span class="">Gaussian Mixture Models (GMM)</span></strong>
+          </td>
+          <td>
+            <span class=""
+              >Soft clustering. Expectation-Maximization (E-step, M-step).</span
+            >
+          </td>
+          <td><span class="">Use sklearn.mixture.GaussianMixture.</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <hr />
+  <h3><span class="">PHASE 2: Deep Learning</span></h3>
+  <p class="ds-markdown-paragraph">
+    <em><span class="">Time: 8-10 weeks</span></em>
+  </p>
+  <h4><span class="">2.1 Neural Network Fundamentals</span></h4>
+  <div
+    class="ds-scroll-area ds-scroll-area--show-on-focus-within ds-scroll-area--enabled _1210dd7 c03cafe9"
+    style="--container-height: 621px"
+  >
+    <div
+      class="ds-scroll-area__gutters"
+      style="
+        --container-height: 621px;
+        position: sticky;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        width: 100%;
+        height: 0px;
+      "
+    >
+      <div
+        class="ds-scroll-area__horizontal-gutter"
+        style="
+          left: 0px;
+          right: 0px;
+          display: block;
+          top: calc(var(--container-height) - 14px);
+          height: 8px;
+        "
+      >
+        <div class="ds-scroll-area__horizontal-bar" style="display: none"></div>
+      </div>
+      <div
+        class="ds-scroll-area__vertical-gutter"
+        style="
+          right: 3px;
+          top: 3px;
+          bottom: calc(0px - var(--container-height) + 3px);
+          width: 8px;
+        "
+      >
+        <div class="ds-scroll-area__vertical-bar" style="display: none"></div>
+      </div>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th><span class="">Topic</span></th>
+          <th><span class="">Sub-Topics</span></th>
+          <th><span class="">Code Task</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <strong><span class="">Perceptron</span></strong>
+          </td>
+          <td>
+            <span class="">Linear neuron. Step activation. XOR problem.</span>
+          </td>
+          <td><span class="">Implement Perceptron.</span></td>
+        </tr>
+        <tr>
+          <td>
+            <strong><span class="">MLP (Multi-Layer Perceptron)</span></strong>
+          </td>
+          <td>
+            <span class=""
+              >Forward pass: Z = WX + b, Activation (ReLU, Sigmoid, Tanh).</span
+            >
+          </td>
+          <td><span class="">Implement forward pass for 2-layer net.</span></td>
+        </tr>
+        <tr>
+          <td>
+            <strong><span class="">Backpropagation</span></strong>
+          </td>
+          <td>
+            <span class=""
+              >Chain rule. Derive gradients: dW², db², dW¹, db¹.</span
+            >
+          </td>
+          <td>
+            <span class=""
+              >Derive on paper. Implement backward pass in NumPy.</span
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <strong><span class="">Training Loop</span></strong>
+          </td>
+          <td>
+            <span class=""
+              >Forward + Backward + Weight update. Batch vs Mini-Batch.</span
+            >
+          </td>
+          <td>
+            <span class=""
+              >Train your NumPy net on MNIST (binary). Plot loss.</span
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <strong><span class="">Weight Initialization</span></strong>
+          </td>
+          <td>
+            <span class=""
+              >Random, Xavier/Glorot, He initialization. Vanishing/Exploding
+              gradients.</span
+            >
+          </td>
+          <td>
+            <span class="">Compare convergence with different inits.</span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <strong><span class="">Regularization</span></strong>
+          </td>
+          <td>
+            <span class=""
+              >Dropout, Batch Normalization, L2 regularization.</span
+            >
+          </td>
+          <td><span class="">Add Dropout &amp; BN to your MNIST net.</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <hr />
+  <h4><span class="">2.2 Convolutional Neural Networks (CNNs)</span></h4>
+  <div
+    class="ds-scroll-area ds-scroll-area--show-on-focus-within ds-scroll-area--enabled _1210dd7 c03cafe9"
+    style="--container-height: 450px"
+  >
+    <div
+      class="ds-scroll-area__gutters"
+      style="
+        --container-height: 450px;
+        position: sticky;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        width: 100%;
+        height: 0px;
+      "
+    >
+      <div
+        class="ds-scroll-area__horizontal-gutter"
+        style="
+          left: 0px;
+          right: 0px;
+          display: block;
+          top: calc(var(--container-height) - 14px);
+          height: 8px;
+        "
+      >
+        <div class="ds-scroll-area__horizontal-bar" style="display: none"></div>
+      </div>
+      <div
+        class="ds-scroll-area__vertical-gutter"
+        style="
+          right: 3px;
+          top: 3px;
+          bottom: calc(0px - var(--container-height) + 3px);
+          width: 8px;
+        "
+      >
+        <div class="ds-scroll-area__vertical-bar" style="display: none"></div>
+      </div>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th><span class="">Topic</span></th>
+          <th><span class="">Sub-Topics</span></th>
+          <th><span class="">Code Task</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <strong><span class="">Convolution Operation</span></strong>
+          </td>
+          <td>
+            <span class=""
+              >Kernel/Filter. Stride, Padding. Channels (RGB).</span
+            >
+          </td>
+          <td><span class="">Implement 2D convolution manually.</span></td>
+        </tr>
+        <tr>
+          <td>
+            <strong><span class="">Pooling</span></strong>
+          </td>
+          <td>
+            <span class="">MaxPooling, AveragePooling. Downsampling.</span>
+          </td>
+          <td><span class="">Implement MaxPool2d from scratch.</span></td>
+        </tr>
+        <tr>
+          <td>
+            <strong><span class="">CNN Architecture</span></strong>
+          </td>
+          <td>
+            <span class="">Conv2d → BN → ReLU → Pool → Flatten → Dense.</span>
+          </td>
+          <td>
+            <span class="">Build CNN for MNIST/CIFAR-10 in PyTorch.</span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <strong><span class="">Transfer Learning</span></strong>
+          </td>
+          <td>
+            <span class=""
+              >Fine-tuning vs Feature Extraction. Pretrained: ResNet,
+              EfficientNet.</span
+            >
+          </td>
+          <td>
+            <span class=""
+              >Load pretrained ResNet. Fine-tune on custom dataset
+              (Cat/Dog).</span
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <strong><span class="">Visualization</span></strong>
+          </td>
+          <td>
+            <span class=""
+              >Feature maps. Grad-CAM (Gradient-weighted Class Activation
+              Mapping).</span
+            >
+          </td>
+          <td><span class="">Apply Grad-CAM on ResNet.</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <hr />
+  <h4><span class="">2.3 Sequence Models (RNN/LSTM)</span></h4>
+  <div
+    class="ds-scroll-area ds-scroll-area--show-on-focus-within ds-scroll-area--enabled _1210dd7 c03cafe9"
+    style="--container-height: 425px"
+  >
+    <div
+      class="ds-scroll-area__gutters"
+      style="
+        --container-height: 425px;
+        position: sticky;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        width: 100%;
+        height: 0px;
+      "
+    >
+      <div
+        class="ds-scroll-area__horizontal-gutter"
+        style="
+          left: 0px;
+          right: 0px;
+          display: block;
+          top: calc(var(--container-height) - 14px);
+          height: 8px;
+        "
+      >
+        <div class="ds-scroll-area__horizontal-bar" style="display: none"></div>
+      </div>
+      <div
+        class="ds-scroll-area__vertical-gutter"
+        style="
+          right: 3px;
+          top: 3px;
+          bottom: calc(0px - var(--container-height) + 3px);
+          width: 8px;
+        "
+      >
+        <div class="ds-scroll-area__vertical-bar" style="display: none"></div>
+      </div>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th><span class="">Topic</span></th>
+          <th><span class="">Sub-Topics</span></th>
+          <th><span class="">Code Task</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <strong><span class="">RNN Theory</span></strong>
+          </td>
+          <td>
+            <span class=""
+              >Hidden state: hₜ = tanh(Wₕₕ hₜ₋₁ + Wₓₕ xₜ). Vanishing/Exploding
+              gradients.</span
+            >
+          </td>
+          <td><span class="">Visualize RNN unrolling.</span></td>
+        </tr>
+        <tr>
+          <td>
+            <strong><span class="">RNN - Code</span></strong>
+          </td>
+          <td><span class="">Implement RNN cell.</span></td>
+          <td><span class="">Predict sine wave sequence.</span></td>
+        </tr>
+        <tr>
+          <td>
+            <strong><span class="">LSTM Theory</span></strong>
+          </td>
+          <td>
+            <span class=""
+              >Forget Gate, Input Gate, Output Gate, Cell State. Equations for
+              each gate.</span
+            >
+          </td>
+          <td><span class="">Derive LSTM equations.</span></td>
+        </tr>
+        <tr>
+          <td>
+            <strong><span class="">LSTM - Code</span></strong>
+          </td>
+          <td>
+            <span class=""
+              >Implement LSTM using PyTorch. Bidirectional LSTM.</span
+            >
+          </td>
+          <td>
+            <span class="">Train LSTM on time series (stock/weather).</span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <strong><span class="">GRU</span></strong>
+          </td>
+          <td><span class="">Gated Recurrent Unit. Fewer gates.</span></td>
+          <td><span class="">Compare LSTM vs GRU on same dataset.</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <hr />
+  <h4><span class="">2.4 Attention &amp; Transformers</span></h4>
+  <div
+    class="ds-scroll-area ds-scroll-area--show-on-focus-within ds-scroll-area--enabled _1210dd7 c03cafe9"
+    style="--container-height: 496px"
+  >
+    <div
+      class="ds-scroll-area__gutters"
+      style="
+        --container-height: 496px;
+        position: sticky;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        width: 100%;
+        height: 0px;
+      "
+    >
+      <div
+        class="ds-scroll-area__horizontal-gutter"
+        style="
+          left: 0px;
+          right: 0px;
+          display: block;
+          top: calc(var(--container-height) - 14px);
+          height: 8px;
+        "
+      >
+        <div class="ds-scroll-area__horizontal-bar" style="display: none"></div>
+      </div>
+      <div
+        class="ds-scroll-area__vertical-gutter"
+        style="
+          right: 3px;
+          top: 3px;
+          bottom: calc(0px - var(--container-height) + 3px);
+          width: 8px;
+        "
+      >
+        <div class="ds-scroll-area__vertical-bar" style="display: none"></div>
+      </div>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th><span class="">Topic</span></th>
+          <th><span class="">Sub-Topics</span></th>
+          <th><span class="">Code Task</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <strong><span class="">Self-Attention</span></strong>
+          </td>
+          <td>
+            <span class="">Q, K, V. Scaled Dot-Product: </span
+            ><code>softmax(QKᵀ/√dₖ)V</code><span class="">.</span>
+          </td>
+          <td>
+            <strong
+              ><span class=""
+                >Implement Self-Attention from scratch in NumPy.</span
+              ></strong
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <strong><span class="">Multi-Head Attention</span></strong>
+          </td>
+          <td>
+            <span class="">Project Q, K, V into h subspaces. Concatenate.</span>
+          </td>
+          <td><span class="">Code Multi-Head Attention in PyTorch.</span></td>
+        </tr>
+        <tr>
+          <td>
+            <strong><span class="">Positional Encoding</span></strong>
+          </td>
+          <td>
+            <span class="">Sinusoidal encodings. Why order matters.</span>
+          </td>
+          <td><span class="">Implement positional encoding.</span></td>
+        </tr>
+        <tr>
+          <td>
+            <strong><span class="">Transformer Encoder</span></strong>
+          </td>
+          <td>
+            <span class=""
+              >Multi-Head Attention → Add &amp; Norm → FFN → Add &amp;
+              Norm.</span
+            >
+          </td>
+          <td><span class="">Build Transformer Encoder layer.</span></td>
+        </tr>
+        <tr>
+          <td>
+            <strong><span class="">Transformer Decoder</span></strong>
+          </td>
+          <td><span class="">Masked Self-Attention. Cross-Attention.</span></td>
+          <td><span class="">Build Decoder layer.</span></td>
+        </tr>
+        <tr>
+          <td>
+            <strong><span class="">Mini-Transformer</span></strong>
+          </td>
+          <td>
+            <span class=""
+              >Combine Encoder + Decoder for toy seq2seq task.</span
+            >
+          </td>
+          <td>
+            <span class="">Train mini-Transformer on sorting/addition.</span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <hr />
+  <h4><span class="">2.5 Advanced Architectures</span></h4>
+  <div
+    class="ds-scroll-area ds-scroll-area--show-on-focus-within ds-scroll-area--enabled _1210dd7 c03cafe9"
+    style="--container-height: 379px"
+  >
+    <div
+      class="ds-scroll-area__gutters"
+      style="
+        --container-height: 379px;
+        position: sticky;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        width: 100%;
+        height: 0px;
+      "
+    >
+      <div
+        class="ds-scroll-area__horizontal-gutter"
+        style="
+          left: 0px;
+          right: 0px;
+          display: block;
+          top: calc(var(--container-height) - 14px);
+          height: 8px;
+        "
+      >
+        <div class="ds-scroll-area__horizontal-bar" style="display: none"></div>
+      </div>
+      <div
+        class="ds-scroll-area__vertical-gutter"
+        style="
+          right: 3px;
+          top: 3px;
+          bottom: calc(0px - var(--container-height) + 3px);
+          width: 8px;
+        "
+      >
+        <div class="ds-scroll-area__vertical-bar" style="display: none"></div>
+      </div>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th><span class="">Topic</span></th>
+          <th><span class="">Sub-Topics</span></th>
+          <th><span class="">Code Task</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <strong><span class="">Vision Transformers (ViT)</span></strong>
+          </td>
+          <td>
+            <span class=""
+              >Image → Patches → Linear Projection → Position Embedding →
+              Transformer.</span
+            >
+          </td>
+          <td>
+            <span class="">Load pretrained ViT. Fine-tune on CIFAR-10.</span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <strong><span class="">Autoencoders</span></strong>
+          </td>
+          <td>
+            <span class=""
+              >Encoder → Bottleneck → Decoder. Dimensionality reduction.</span
+            >
+          </td>
+          <td><span class="">Build a simple autoencoder.</span></td>
+        </tr>
+        <tr>
+          <td>
+            <strong
+              ><span class="">Variational Autoencoders (VAE)</span></strong
+            >
+          </td>
+          <td><span class="">Reparameterization trick. Latent space.</span></td>
+          <td>
+            <span class="">Build VAE on MNIST. Generate new digits.</span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <strong><span class="">GANs</span></strong>
+          </td>
+          <td>
+            <span class="">Generator vs Discriminator. Min-Max game.</span>
+          </td>
+          <td><span class="">Build GAN for MNIST.</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <hr />
+  <h3><span class="">PHASE 3: Advanced ML &amp; Optimization</span></h3>
+  <p class="ds-markdown-paragraph">
+    <em><span class="">Time: 3-4 weeks</span></em>
+  </p>
+  <div
+    class="ds-scroll-area ds-scroll-area--show-on-focus-within ds-scroll-area--enabled _1210dd7 c03cafe9"
+    style="--container-height: 450px"
+  >
+    <div
+      class="ds-scroll-area__gutters"
+      style="
+        --container-height: 450px;
+        position: sticky;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        width: 100%;
+        height: 0px;
+      "
+    >
+      <div
+        class="ds-scroll-area__horizontal-gutter"
+        style="
+          left: 0px;
+          right: 0px;
+          display: block;
+          top: calc(var(--container-height) - 14px);
+          height: 8px;
+        "
+      >
+        <div class="ds-scroll-area__horizontal-bar" style="display: none"></div>
+      </div>
+      <div
+        class="ds-scroll-area__vertical-gutter"
+        style="
+          right: 3px;
+          top: 3px;
+          bottom: calc(0px - var(--container-height) + 3px);
+          width: 8px;
+        "
+      >
+        <div class="ds-scroll-area__vertical-bar" style="display: none"></div>
+      </div>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th><span class="">Topic</span></th>
+          <th><span class="">Sub-Topics</span></th>
+          <th><span class="">Code Task</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <strong><span class="">Convex Optimization</span></strong>
+          </td>
+          <td>
+            <span class=""
+              >Convex sets, Convex functions. Global vs Local minima.</span
+            >
+          </td>
+          <td><span class="">Determine convexity of loss functions.</span></td>
+        </tr>
+        <tr>
+          <td>
+            <strong><span class="">Lagrange Multipliers</span></strong>
+          </td>
+          <td>
+            <span class="">Constrained optimization. KKT Conditions.</span>
+          </td>
+          <td><span class="">Derive SVM dual.</span></td>
+        </tr>
+        <tr>
+          <td>
+            <strong><span class="">Second-Order Optimization</span></strong>
+          </td>
+          <td>
+            <span class="">Newton's Method: θ_new = θ - H⁻¹∇J. BFGS.</span>
+          </td>
+          <td>
+            <span class="">Implement Newton's method on simple function.</span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <strong><span class="">Information Theory</span></strong>
+          </td>
+          <td>
+            <span class=""
+              >Entropy, KL Divergence, Cross-Entropy, Mutual Information.</span
+            >
+          </td>
+          <td>
+            <span class="">Compute KL divergence between two Gaussians.</span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <strong><span class="">Bayesian ML</span></strong>
+          </td>
+          <td>
+            <span class="">Prior, Likelihood, Posterior. MAP vs MLE.</span>
+          </td>
+          <td><span class="">Implement Bayesian Linear Regression.</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <hr />
+  <h3><span class="">PHASE 4: ML System Design &amp; Evaluation</span></h3>
+  <p class="ds-markdown-paragraph">
+    <em><span class="">Time: 2-3 weeks</span></em>
+  </p>
+  <div
+    class="ds-scroll-area ds-scroll-area--show-on-focus-within ds-scroll-area--enabled _1210dd7 c03cafe9"
+    style="--container-height: 575px"
+  >
+    <div
+      class="ds-scroll-area__gutters"
+      style="
+        --container-height: 575px;
+        position: sticky;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        width: 100%;
+        height: 0px;
+      "
+    >
+      <div
+        class="ds-scroll-area__horizontal-gutter"
+        style="
+          left: 0px;
+          right: 0px;
+          display: block;
+          top: calc(var(--container-height) - 14px);
+          height: 8px;
+        "
+      >
+        <div class="ds-scroll-area__horizontal-bar" style="display: none"></div>
+      </div>
+      <div
+        class="ds-scroll-area__vertical-gutter"
+        style="
+          right: 3px;
+          top: 3px;
+          bottom: calc(0px - var(--container-height) + 3px);
+          width: 8px;
+        "
+      >
+        <div class="ds-scroll-area__vertical-bar" style="display: none"></div>
+      </div>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th><span class="">Topic</span></th>
+          <th><span class="">Sub-Topics</span></th>
+          <th><span class="">Task</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <strong><span class="">Cross-Validation</span></strong>
+          </td>
+          <td>
+            <span class=""
+              >K-Fold, Stratified K-Fold, Leave-One-Out. TimeSeriesSplit.</span
+            >
+          </td>
+          <td><span class="">Implement K-Fold manually.</span></td>
+        </tr>
+        <tr>
+          <td>
+            <strong><span class="">Hyperparameter Tuning</span></strong>
+          </td>
+          <td>
+            <span class=""
+              >GridSearchCV, RandomizedSearchCV, Bayesian Optimization.</span
+            >
+          </td>
+          <td><span class="">Tune XGBoost using Optuna.</span></td>
+        </tr>
+        <tr>
+          <td>
+            <strong><span class="">Feature Engineering</span></strong>
+          </td>
+          <td>
+            <span class=""
+              >Handling missing values, outliers. Encoding (One-Hot, Target).
+              Scaling (Standard, MinMax). Feature selection (RFE, SHAP).</span
+            >
+          </td>
+          <td><span class="">Build complete preprocessing pipeline.</span></td>
+        </tr>
+        <tr>
+          <td>
+            <strong><span class="">Model Interpretation</span></strong>
+          </td>
+          <td>
+            <span class=""
+              >Permutation Importance, SHAP values, Partial Dependence
+              Plots.</span
+            >
+          </td>
+          <td><span class="">Plot SHAP summary for XGBoost.</span></td>
+        </tr>
+        <tr>
+          <td>
+            <strong><span class="">ML System Design</span></strong>
+          </td>
+          <td>
+            <span class=""
+              >Design a recommendation system. Design a fraud detection
+              pipeline.</span
+            >
+          </td>
+          <td><span class="">Draw architecture diagrams.</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <hr />
+  <h3><span class="">🗓️ Timeline Summary</span></h3>
+  <div
+    class="ds-scroll-area ds-scroll-area--show-on-focus-within ds-scroll-area--enabled _1210dd7 c03cafe9"
+    style="--container-height: 371px"
+  >
+    <div
+      class="ds-scroll-area__gutters"
+      style="
+        --container-height: 371px;
+        position: sticky;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        width: 100%;
+        height: 0px;
+      "
+    >
+      <div
+        class="ds-scroll-area__horizontal-gutter"
+        style="
+          left: 0px;
+          right: 0px;
+          display: block;
+          top: calc(var(--container-height) - 14px);
+          height: 8px;
+        "
+      >
+        <div class="ds-scroll-area__horizontal-bar" style="display: none"></div>
+      </div>
+      <div
+        class="ds-scroll-area__vertical-gutter"
+        style="
+          right: 3px;
+          top: 3px;
+          bottom: calc(0px - var(--container-height) + 3px);
+          width: 8px;
+        "
+      >
+        <div class="ds-scroll-area__vertical-bar" style="display: none"></div>
+      </div>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th><span class="">Phase</span></th>
+          <th><span class="">Focus</span></th>
+          <th><span class="">Time</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <strong><span class="">Phase 0</span></strong>
+          </td>
+          <td><span class="">Mathematics Foundation</span></td>
+          <td><span class="">3-4 weeks</span></td>
+        </tr>
+        <tr>
+          <td>
+            <strong><span class="">Phase 1</span></strong>
+          </td>
+          <td><span class="">Classical ML (All Algorithms)</span></td>
+          <td><span class="">8-10 weeks</span></td>
+        </tr>
+        <tr>
+          <td>
+            <strong><span class="">Phase 2</span></strong>
+          </td>
+          <td>
+            <span class="">Deep Learning (NN, CNN, RNN, Transformer)</span>
+          </td>
+          <td><span class="">8-10 weeks</span></td>
+        </tr>
+        <tr>
+          <td>
+            <strong><span class="">Phase 3</span></strong>
+          </td>
+          <td><span class="">Advanced Optimization &amp; Theory</span></td>
+          <td><span class="">3-4 weeks</span></td>
+        </tr>
+        <tr>
+          <td>
+            <strong><span class="">Phase 4</span></strong>
+          </td>
+          <td><span class="">ML System Design &amp; Evaluation</span></td>
+          <td><span class="">2-3 weeks</span></td>
+        </tr>
+        <tr>
+          <td>
+            <strong><span class="">Total</span></strong>
+          </td>
+          <td>
+            <strong><span class="">ML-Only Mastery</span></strong>
+          </td>
+          <td>
+            <strong><span class="">~24-31 weeks (6-8 months)</span></strong>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <hr />
+  <h3><span class="">✅ The Final Checklist</span></h3>
+  <ul>
+    <li class="ds-markdown-task-list-item">
+      <span class="ds-markdown-task-checkbox">□ </span>
+      <p class="ds-markdown-paragraph">
+        <span class=""
+          >Can you derive Linear Regression (Normal Equation + GD)?</span
+        >
+      </p>
+    </li>
+    <li class="ds-markdown-task-list-item">
+      <span class="ds-markdown-task-checkbox">□ </span>
+      <p class="ds-markdown-paragraph">
+        <span class=""
+          >Can you derive Logistic Regression (MLE + Cross-Entropy)?</span
+        >
+      </p>
+    </li>
+    <li class="ds-markdown-task-list-item">
+      <span class="ds-markdown-task-checkbox">□ </span>
+      <p class="ds-markdown-paragraph">
+        <span class=""
+          >Can you implement Backpropagation for a 2-layer NN in NumPy?</span
+        >
+      </p>
+    </li>
+    <li class="ds-markdown-task-list-item">
+      <span class="ds-markdown-task-checkbox">□ </span>
+      <p class="ds-markdown-paragraph">
+        <span class=""
+          >Can you write the Self-Attention formula on a whiteboard?</span
+        >
+      </p>
+    </li>
+    <li class="ds-markdown-task-list-item">
+      <span class="ds-markdown-task-checkbox">□ </span>
+      <p class="ds-markdown-paragraph">
+        <span class="">Can you implement PCA using SVD?</span>
+      </p>
+    </li>
+    <li class="ds-markdown-task-list-item">
+      <span class="ds-markdown-task-checkbox">□ </span>
+      <p class="ds-markdown-paragraph">
+        <span class=""
+          >Can you tune XGBoost hyperparameters (eta, max_depth, gamma)?</span
+        >
+      </p>
+    </li>
+    <li class="ds-markdown-task-list-item">
+      <span class="ds-markdown-task-checkbox">□ </span>
+      <p class="ds-markdown-paragraph">
+        <span class="">Can you build a CNN for CIFAR-10 in PyTorch?</span>
+      </p>
+    </li>
+    <li class="ds-markdown-task-list-item">
+      <span class="ds-markdown-task-checkbox">□ </span>
+      <p class="ds-markdown-paragraph">
+        <span class="">Can you build an LSTM for time series?</span>
+      </p>
+    </li>
+    <li class="ds-markdown-task-list-item">
+      <span class="ds-markdown-task-checkbox">□ </span>
+      <p class="ds-markdown-paragraph">
+        <span class="">Can you explain Bagging vs Boosting vs Stacking?</span>
+      </p>
+    </li>
+    <li class="ds-markdown-task-list-item">
+      <span class="ds-markdown-task-checkbox">□ </span>
+      <p class="ds-markdown-paragraph">
+        <span class=""
+          >Can you compute Precision, Recall, F1 from a Confusion Matrix?</span
+        >
+      </p>
+    </li>
+  </ul>
+  <hr />
+  <h3><span class="">📚 Best Resources</span></h3>
+  <div
+    class="ds-scroll-area ds-scroll-area--show-on-focus-within ds-scroll-area--enabled _1210dd7 c03cafe9"
+    style="--container-height: 300px"
+  >
+    <div
+      class="ds-scroll-area__gutters"
+      style="
+        --container-height: 300px;
+        position: sticky;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        width: 100%;
+        height: 0px;
+      "
+    >
+      <div
+        class="ds-scroll-area__horizontal-gutter"
+        style="
+          left: 0px;
+          right: 0px;
+          display: block;
+          top: calc(var(--container-height) - 14px);
+          height: 8px;
+        "
+      >
+        <div class="ds-scroll-area__horizontal-bar" style="display: none"></div>
+      </div>
+      <div
+        class="ds-scroll-area__vertical-gutter"
+        style="
+          right: 3px;
+          top: 3px;
+          bottom: calc(0px - var(--container-height) + 3px);
+          width: 8px;
+        "
+      >
+        <div class="ds-scroll-area__vertical-bar" style="display: none"></div>
+      </div>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th><span class="">Topic</span></th>
+          <th><span class="">Resource</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <strong><span class="">Math</span></strong>
+          </td>
+          <td>
+            <span class="">3Blue1Brown, Stanford CS229 Math Refresher</span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <strong><span class="">Classical ML</span></strong>
+          </td>
+          <td>
+            <span class="">Andrew Ng CS229 Lecture Notes, </span
+            ><em><span class="">Hands-On ML</span></em
+            ><span class=""> (Géron)</span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <strong><span class="">Deep Learning</span></strong>
+          </td>
+          <td>
+            <em><span class="">Neural Networks and Deep Learning</span></em
+            ><span class=""> (Nielsen), PyTorch Tutorials</span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <strong><span class="">Transformers</span></strong>
+          </td>
+          <td>
+            <em><span class="">The Annotated Transformer</span></em
+            ><span class=""> (Harvard NLP)</span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <strong><span class="">Practice</span></strong>
+          </td>
+          <td>
+            <span class=""
+              >Kaggle (Tabular Playground, Titanic, House Prices)</span
+            >
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <hr />
+  <h2><span class="">🚀 Your Next Step (Tomorrow)</span></h2>
+  <p class="ds-markdown-paragraph">
+    <span class="">Start </span
+    ><strong><span class="">Week 1, Day 1</span></strong
+    ><span class="">:</span>
+  </p>
+  <ol start="1">
+    <li>
+      <p class="ds-markdown-paragraph">
+        <span class="">Generate synthetic data: </span
+        ><code>X = np.random.rand(100,1)*10</code><span class="">, </span
+        ><code>y = 2.5*X + noise</code>
+      </p>
+    </li>
+    <li>
+      <p class="ds-markdown-paragraph">
+        <span class="">Write </span
+        ><strong><span class="">Normal Equation</span></strong
+        ><span class=""> to find θ.</span>
+      </p>
+    </li>
+    <li>
+      <p class="ds-markdown-paragraph">
+        <span class="">Write </span
+        ><strong><span class="">Batch Gradient Descent</span></strong
+        ><span class=""> from scratch.</span>
+      </p>
+    </li>
+    <li>
+      <p class="ds-markdown-paragraph">
+        <span class="">Plot the regression line over the scatter plot.</span>
+      </p>
+    </li>
+  </ol>
+  <hr />
+  <p class="ds-markdown-paragraph">
+    <strong
+      ><span class=""
+        >Do you want me to drop the exact Day 1 code + math derivation right
+        now?</span
+      ></strong
+    ><span class="">
+      Or jump to a specific algorithm (e.g., Backpropagation, Transformers)?
+      Tell me, and I'll feed you the code + math side-by-side. 🚀📐</span
+    >
+  </p>
+</div>

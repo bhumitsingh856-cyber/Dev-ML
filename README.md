@@ -29,6 +29,8 @@ The repository tracks my learning curve across key disciplines:
 │   │   ├── Projects/              # Applied prediction (e.g., Ford Car Price Prediction)
 │   │   └── Data Sets/             # Datasets practiced on
 │   └── Unsupervised Learning/     # Clustering, PCA, etc. (Work in Progress 🚧)
+│   │
+│   └── Natural Language Processing/     # (Work in Progress 🚧)
 │
 └── Notes/                         # Handcrafted HTML cheat sheets and notes
 ```

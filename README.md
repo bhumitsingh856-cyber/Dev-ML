@@ -31,6 +31,7 @@ The repository tracks my learning curve across key disciplines:
 │   └── Unsupervised Learning/     # Clustering, PCA, etc. (Work in Progress 🚧)
 │   │
 │   └── Natural Language Processing/     # (Work in Progress 🚧)
+│   └── Deep Learning/
 │
 └── Notes/                         # Handcrafted HTML cheat sheets and notes
 ```
